@@ -1,0 +1,32 @@
+body {
+  background-color: #eb8e02 !important;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.car {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 750px;
+}
+.ecran {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+body {
+  display: grid;
+  justify-content: center;
+}
