@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/formulaire.css">
+</head>
+
+<body>
+    <div class="formulaire">
+        <form action="/action">
+            <label for="fname">Entrer votre prenom</label>
+            <input type="text" id="fname" name="prenom" placeholder="votre prenom" required>
+
+            <label for="lname">Entrer votre nom</label>
+            <input type="text" id="lname" name="nom" placeholder="votre nom " required>
+
+
+            <label for="email">Entrer votre adresse email</label>
+            <input type="text" id="email" name="email" placeholder="votre adresse email" pattern=".+@globex.com"
+                required>
+            <div class="password">
+                <label for="password">Entrer votre mot de passe</label>
+                <input type="text" id="password" name="password" placeholder="votre mot de passe" minlength="8"
+                    required>
+
+            </div>
+            <div class="naissance">
+                <label for="naissance">Entrer votre date de naissance</label>
+                <input type="date" id="naissance" name="anniversaire" placeholder="votre date de naissance" required>
+            </div>
+            <label for="adresse">Enter votre adresse</label>
+            <input type="text" id="adresse" name="adresse" placeholder="votre adresse" required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="Tunisie">Tunisie</option>
+                <option value="Algerie">Algerie</option>
+                <option value="Maroc">Maroc</option>
+            </select>
+            <label for="phone">Entrer votre num de tel:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+
+            <small>Format: 123-456-789</small>
+
+
+
+
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

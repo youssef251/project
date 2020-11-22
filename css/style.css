@@ -19,14 +19,15 @@ body {
   justify-content: center;
   margin: 0 auto;
   max-width: 750px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .ecran {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 20px;
-  column-gap: 40px;
-}
-body {
-  display: grid;
-  justify-content: center;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(9, auto);
+  column-gap: 10px;
+  row-gap: 40px;
+  margin-left: 100px;
 }

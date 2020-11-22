@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body {
-  background-color: #eb8e02;
+  background-color: #eb8e02 !important;
 }
 .ecran {
   max-width: 1015px;

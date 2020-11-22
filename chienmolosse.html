@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/chienmolosse.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -22,41 +25,40 @@
                     Staffordshire
                     Terrier et de l'American Pitt Bull Terrier, puis complété par d'autres races de type Bulldog, comme
                     l'American Bulldog, le Bulldog Anglais ou encore le Bouledogue Français.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <a onClick="showModal('#americanbully')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/berger de caucase.jpg.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/_light-325539-berger-du-caucase.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Berger Caucase</h5>
-                <p class="card-text">Le Berger du Caucase est un chien rustique et massif, mais de de construction
-                    harmonieuse.
-                    Il en existe trois types : « montagne » (crinière, poil de couverture long,
-                    pattes et queue touffue), « steppe » (fourrure épaisse, mais sans crinière ni franges,
-                    corps plus élancé) et intermédiaire</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Berger de Caucase</h5>
+                <p class="card-text">Le Bouledogue Américain est un chien de type molossoïde de taille moyenne.
+                    Puissant, compact et athlétique, il est doté d'une ossature et d'une musculature bien
+                    développées.</p>
+                <a onClick="showModal('#bergercaucase')" class="btn btn-primary">Afficher la suite</a>
+
             </div>
         </div>
 
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/bouledogue american.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/bulldog american.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
                 <h5 class="card-title">Bouledogue Americain</h5>
                 <p class="card-text">Le Bouledogue Américain est un chien de type molossoïde de taille moyenne.
                     Puissant, compact et athlétique, il est doté d'une ossature et d'une musculature bien
                     développées.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <a onClick="showModal('#bulldogamerican')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/bouledogue anglais.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/bulldog anglais.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
                 <h5 class="card-title">Bouledogue Anglais</h5>
                 <p class="card-text">Le Bulldog Anglais se distingue au premier abord par sa tête massive et inégalement
@@ -67,13 +69,13 @@
                     ses
                     principaux traits. Dès qu’on voit l’animal, on note une grande robustesse malgré ses pattes très
                     courtes.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <a onClick="showModal('#bulldoganglais')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/bouledogue francais.jpg " class="card-img-top" alt="jpg">
+            <img src="./img/bulldog francais.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
                 <h5 class="card-title">Bouledogue Francais</h5>
                 <p class="card-text">Le Bouledogue français est un molosse de petite taille.
@@ -82,206 +84,617 @@
                     et
                     les
                     enfants.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <a onClick="showModal('#bulldogfrancais')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/caniche bichon.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/bull terrier.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Bichon Maltais</h5>
-                <p class="card-text">Le Bichon Maltais est un chien de petit format, calme et très intelligent qui
-                    possède un tronc étroit
-                    et long, de petite taille avec un long poil blanc et soyeux. C'est un petit chien très élégant
-                    avec
-                    un port de tête fier et distingué. </p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
-            </div>
-        </div>
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="./img/caniche.jpg" class="card-img-top" alt="jpg">
-            <div class="card-body">
-                <h5 class="card-title">Caniche</h5>
-                <p class="card-text">Le Caniche est l’un des chiens les plus populaires en France. Les familles
-                    adorent sa bouille
-                    joviale et très mignonne, sa douceur, sa quiétude et son envie incessante de bouger.
-                    Il apporte du dynamisme dans les vies de chacun.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Bull Terrier</h5>
+                <p class="card-text">Atypique avec son chanfrein particulier, le Bull Terrier est un chien qui a perdu
+                    toute trace
+                    d’agressivité.
+                    Il est parfait comme compagnon de vie pour un célibataire ou des familles avec ou sans enfant.
+                    Il est très dévoué et fidèle à son maître dont il ne peut se passer.</p>
+                <a onClick="showModal('#bullterrier')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/chihuahua.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/cane corso.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Chihuahua</h5>
-                <p class="card-text">Le Chihuahua est un chien racé aux proportions harmonieuses.
-                    Tête ronde à l'expression vive. Le Chihuahua est un devenu au fil du temps un chien très
-                    populaire
-                    en Europe et aux Etats-Unis. Considéré comme le plus petit chien de race du monde,
-                    il adore être pris dans les bras par ses propriétaires et être câliné.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
-            </div>
-        </div>
-
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="./img/chow chow.jpg" class="card-img-top" alt="jpg">
-            <div class="card-body">
-                <h5 class="card-title">Chow Chow</h5>
-                <p class="card-text">Avec sa crinière qui évoque un lion et son expression un peu renfrognée,
-                    le Chow-Chow est un chien aux caractéristiques physiques notables.
-                    Sa grosse tête, sa langue bleue et son pelage très dense ne laissent pas indifférent. </p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Cane Corso</h5>
+                <p class="card-text">Le Cane Corso est un chien d’Italie. Chien de garde par excellence,
+                    il est surtout un adorable compagnon de vie pour les familles avec ou sans enfant.
+                    Il est doux, attentionné, fidèle et loyal. C’est un chien sportif qui a besoin d’une activité
+                    quotidienne.
+                    Il possède une santé robuste et s’avère très simple à entretenir.</p>
+                <a onClick="showModal('#canecorso')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/dalmatien.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/carlin.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Dalmatien</h5>
-                <p class="card-text">Le Dalmatien est un chien très populaire, connu dans le monde entier et
-                    particulièrement en France.
-                    C' est un chien à l'aspect mêlant puissance et harmonie. Le corps est rectangulaire et
-                    musclé.
-                    Le chien est paré de taches nummulaires caractéristiques de la race.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
-            </div>
-        </div>
-
-
-        <div class="card" style="width: 18rem;">
-            <img src="./img/epagneul breton.jpg" class="card-img-top" alt="jpg">
-            <div class="card-body">
-                <h5 class="card-title">Epagneul Breton</h5>
-                <p class="card-text">L’Épagneul breton est le plus petit chien d’arrêt et la première race
-                    de cette catégorie qui soit
-                    originaire de France.
-                    Il dispose d’une ossature solide qui contraste avec son élégance naturelle.
-                    Il est particulièrement connu pour son regard expressif et la vigueur dont il ne se
-                    départit jamais.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Carlin</h5>
+                <p class="card-text">Le Carlin est un chien assez populaire en Europe. Il est très apprécié par les
+                    familles ou même les
+                    personnes seules,
+                    qui n’ont pas forcément besoin de le sortir très souvent pour qu’il soit heureux.
+                    Il est doux et attentionné envers son maître, avec lequel il passe la grande majorité de ses
+                    journées.</p>
+                <a onClick="showModal('#carlin')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/golden retriver.jpg" class="card-img-top" alt="...">
+            <img src="./img/dobermann.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Le Golden Retriever est l'une des races les plus populaires au
-                    monde tant il respire une attitude
-                    joviale
-                    et amicale.
-                    Son intelligence et son image de chien affectueux et parfait pour la famille
-                    expliquent ce succès.
-                    Son manteau or est caractéristique.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Dobermann</h5>
+                <p class="card-text">Le Dobermann est un chien allemand connu sous le surnom de « chien de gendarme ».
+                    C’est un chien de garde par excellence, mais également un excellent compagnon de vie.
+                    Il surveillera à merveille son maître et sa famille entière, se montrera doux, délicat et
+                    attentionné.</p>
+                <a onClick="showModal('#doberman')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/husky.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/dogo-argentino.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">husky</h5>
-                <p class="card-text">De taille moyenne, le Husky Sibérien est un chien à l’allure
-                    élégante et souple.
-                    Hyperactif, il sert traditionnellement de chien de traîneau.
-                    C'est un chien qui sait se montrer indépendant, mais il n’apprécie pas la
-                    solitude pour autant.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Dogo Argentino</h5>
+                <p class="card-text">Le Dogue Argentin est un chien de grande taille, qui a un aspect équilibré et
+                    harmonieux.
+                    Puissamment musclé, c'est un molossoïde de type dogue massif sans être lourd. Le Dogue Argentin,
+                    appelé aussi Dogo, est un chien très populaire en France depuis son importation dans les années
+                    1970.</p>
+                <a onClick="showModal('#dogoargentino')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/jack russel.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/dogue-allemand-1-110332.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Jack Russell</h5>
-                <p class="card-text">Le Jack Russell Terrier est un chien robuste, très actif avec une forte
-                    personnalité. Il dispose d’un
-                    corps élastique, de taille moyenne.
-                    Ce chien joyeux est réputé pour être une petite boule de nerfs.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Dogue Allemand</h5>
+                <p class="card-text">Le Dogue Allemand a une allure très imposante, mais harmonieuse.
+                    Ce qui lui vaut le surnom d’Apollon de la gent canine..</p>
+                <a onClick="showModal('#dogueallemand')" class="btn btn-primary">Afficher la suite</a>
+            </div>
+        </div>
+
+
+
+        <div class="card" style="width: 18rem;">
+            <img src="./img/kangal-1-134823.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kangal</h5>
+                <p class="card-text">Le Kangal aussi connu sous le nom de berger d’Anatolie , est une race de chien
+                    originaire de Turquie,
+                    de grande taille. Il s'agit d'un chien de berger utilisé pour la protection de troupeau et parfois
+                    la
+                    garde de propriété</p>
+                <a onClick="showModal('#kangal')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/labrador.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/pitbull.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Labrador</h5>
-                <p class="card-text">Le Labrador Retriever est un chien de taille moyenne, à l’allure robuste, de
-                    couleur sable, chocolat
-                    ou
-                    noir.
-                    Très apprécié des familles, il fait souvent le plaisir des enfants avec qui il est un formidable
-                    partenaire de jeu. Son expression joviale et amicale participe grandement à son succès.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Pitbull</h5>
+                <p class="card-text">Le Pitbull est en réalité un chien quasiment parfait pour les familles avec enfant,
+                    à l’unique
+                    condition
+                    qu’il ait été adopté très tôt. Avec une bonne éducation,
+                    son agressivité sera effacée et il présentera alors des qualités de douceur, de calme et de
+                    fidélité.</p>
+                <a onClick="showModal('#pitbull')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
 
         <div class="card" style="width: 18rem;">
-            <img src="./img/malamute.jpg" class="card-img-top" alt="jpg">
+            <img src="./img/rottweiler.jpg" class="card-img-top" alt="jpg">
             <div class="card-body">
-                <h5 class="card-title">Malamute</h5>
-                <p class="card-text">Le Malamute de l’Alaska possède une santé de fer. Il supporte les conditions
-                    hivernales à merveille
-                    mais
-                    a plus de mal avec les grosses chaleurs. Son entretien est minime et l’éduquer se révèle assez
-                    aisé.
-                    De plus, ce canidé est un adorable compagnon de vie</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/pointer.jpg" class="card-img-top" alt="jpg">
-            <div class="card-body">
-                <h5 class="card-title">Pointer</h5>
-                <p class="card-text">Le Pointer Anglais est aussi bien un chien d’arrêt qu’un chien de chasse. Il
-                    excelle dans celle du
-                    lièvre. En famille, il se veut doux, délicat et attentionné. Il est également très fidèle à un
-                    maître
-                    qu’il aime suivre partout, même s’il est aussi indépendant.
-                    Il ne doit pas être adopté pour rester allongé toute la journée.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
+                <h5 class="card-title">Rottweiler</h5>
+                <p class="card-text">Le Rottweiler est un chien solide, qui évoque la force.
+                    Son corps très musclé fait de lui un chien bien proportionné, à la fois souple et endurant.
+                    Il dispose d’un corps bien équilibré, harmonieux, élégant. Il s’agit d’un des chiens de garde les
+                    plus
+                    populaires du monde à notre époque.</p>
+                <a onClick="showModal('#rottweiler')" class="btn btn-primary">Afficher la suite</a>
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="./img/shih tzu.jpg" class="card-img-top" alt="jpg">
-            <div class="card-body">
-                <h5 class="card-title">Shih Tzu</h5>
-                <p class="card-text">Le Shih Tzu est un chien très actif et doté d’une forte personnalité. De petite
-                    taille et d’un poids
-                    léger, il dispose d’une vive intelligence.
-                    Ces qualités font de lui un animal de compagnie des plus agréables.</p>
-                <a href="#" class="btn btn-primary">Go
-                    somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./img/spitz nain.jpg" class="card-img-top" alt="jpg">
-            <div class="card-body">
-                <h5 class="card-title">Spitz Nain</h5>
-                <p class="card-text">Le spitz nain, connu aussi sous le nom de loulou de Poméranie et parfois
-                    poméranien, est une variété
-                    de
-                    taille du spitz allemand,
-                    race de chien originaire d'Allemagne.
-                    Il est un bon compagnon attaché à son maître et affectueux.</p>
-                <a href="#" class="btn btn-primary">Afficher la suite</a>
-            </div>
-        </div>
-    </section>
 
+        <div class="card" style="width: 18rem;">
+            <img src="./img/saintbernard.jpg" class="card-img-top" alt="jpg">
+            <div class="card-body">
+                <h5 class="card-title">Saint bernard</h5>
+                <p class="card-text">Le Saint-Bernard est un grand chien de montagne qui se distingue autant par sa
+                    stature
+                    impressionnante
+                    que par sa grande intelligence.
+                    D'apparence massive et puissante, il affiche une expression attentive et un corps à la fois musclé
+                    et
+                    harmonieux</p>
+                <a onClick="showModal('#saintbernard')" class="btn btn-primary">Afficher la suite</a>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal" id="americanbully" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Derrière son allure de molosse, l’American Bully est un chien affectueux et fidèle, très
+                            attaché à son
+                            maître. Il
+                            supporte mal la solitude. C’est aussi un chien relativement têtu qui nécessite une éducation
+                            ferme et qui
+                            convient mieux à un maître qui a une bonne expérience de la race canine.
+
+                            L’American Bully fait preuve d’une grande patience et de tendresse avec les enfants. À
+                            condition d’imposer
+                            des
+                            règles de vie et du respect entre ce chien et les enfants, il sera le compagnon idéal pour
+                            eux.
+
+                            En revanche, la cohabitation de l’American Bully avec d’autres animaux au sein de sa famille
+                            n’est pas
+                            toujours
+                            facile, donc pas recommandée à moins qu’il ait été habitué dès son plus jeune âge.
+
+                            Il est un très bon chien de garde sans toutefois être agressif.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="bergercaucase" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Berger du Caucase est avant tout un chien protecteur, conçu pour la garde et la défense,
+                            qui est très
+                            attaché à son maître. C’est un chien particulièrement courageux et réactif. D’instinct, le
+                            Berger du Caucase
+                            est un chien méfiant. Son maître doit donc l’éduquer de manière à le sociabiliser. C’est
+                            pourquoi ce chien
+                            convient mieux à une personne qui a déjà l’habitude des canidés.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="bulldogamerican" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Derrière sa carrure d’athlète se cache un chien très intelligent, docile et dévoué. Pour
+                            toutes ces qualités,
+                            le Bouledogue Américain est l’animal de compagnie idéal. C’est aussi un chien joueur et qui
+                            remplit de
+                            gaieté la maison. Il aime et respecte également les enfants. Vis-à-vis des personnes
+                            étrangères à sa
+                            famille, il garde cependant son instinct de gardien et peut se montrer très méfiant. De la
+                            même manière, le
+                            Bouledogue Américain a tendance à vouloir dominer les autres espèces de chiens, en
+                            particulier les mâles.
+                            Compte tenu de son caractère, ce chien est donc davantage destiné à un maître ayant un
+                            minimum de fermeté
+                            pour bien l’éduquer et le rendre le plus sociable possible.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="bulldoganglais" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Bouledogue Anglais est un chien au tempérament vif et déterminé, qui fait preuve de bonne
+                            volonté et de
+                            beaucoup de courage.
+
+                            Son apparence renfrognée et sa morphologie trapue sont trompeuses et dissimulent une grande
+                            sensibilité et
+                            un caractère très affectueux.
+
+                            Proche de son maître, le Bouledogue Anglais est un compagnon fidèle et sociable des plus
+                            dignes de confiance.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="bulldogfrancais" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le bouledogue français est apprécié pour son caractère doux, sociable et joueur. C’est un
+                            camarade de jeux
+                            idéal pour les enfants. Sa douceur en fait aussi un très bon animal de compagnie pour les
+                            personnes âgées,
+                            d’autant qu’il n’a pas besoin de beaucoup d’exercices physiques. C’est un chien très attaché
+                            à son maître et
+                            il est prêt à le défendre, ainsi que sa famille, s’il sent un danger. Le bouledogue français
+                            est très
+                            séducteur. Sa cohabitation avec d’autres animaux est facile, excepté quand il s’agit d’un
+                            autre mâle de son
+                            espèce.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="bullterrier" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Bull terrier ne supporte pas la solitude. Il est très attaché à ses maîtres qu’il cherche
+                            toujours à
+                            protéger. C’est un chien extrêmement docile et très curieux qui s’entend notamment
+                            parfaitement bien avec
+                            les enfants. Le Bull terrier a toutefois une forte personnalité. Il convient donc de
+                            l’éduquer dès le plus
+                            jeune âge et lui apprendre en particulier à vivre en compagnie d’autres chiens dont il
+                            n’apprécie pas
+                            naturellement la présence. Il nécessite un maître capable de l’éduquer fermement.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="canecorso" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Cane Corso est d’une grande intelligence et très protecteur. De plus, avec son corps
+                            énergique et musclé,
+                            il est le chien de garde et de défense parfait. Derrière son allure de molosse, c’est un
+                            chien affectueux et
+                            doux, merveilleux chien de compagnie. Il est très attaché à sa famille d’accueil, et surtout
+                            à ses maîtres,
+                            et il aime tout particulièrement jouer avec les enfants d’autant que le Cane Corso est un
+                            chien calme. C’est
+                            un chien qui aboie peu à part quand il joue son rôle de bon gardien. Le Cane Corso est un
+                            chien de
+                            caractère, surtout le mâle, qu’il faut éduquer fermement dès qu’il est petit pour éviter
+                            qu’il domine. Il
+                            supporte mal la présence d’autres chiens.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="carlin" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Carlin a la particularité d’être très sociable. Évidemment avec son maître qu’il aime
+                            par-dessus tout,
+                            mais aussi avec les étrangers. C’est un chien très doux, qui apprécie de se faire dorloter,
+                            joueur et
+                            farceur. Il amuse toute la famille avec ses ronflements et ses ronronnements. Le Carlin
+                            s’adapte
+                            parfaitement à la vie de la famille qu’il suit partout, en balade ou dans la maison. Il
+                            apprécie tout
+                            particulièrement la présence d’enfants et, comme il n’a pas besoin de beaucoup d’exercice
+                            physique, il est
+                            aussi un très bon animal de compagnie pour les personnes âgées.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="doberman" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Doberman a eu très longtemps la réputation d’être un chien féroce, réputation qui
+                            aujourd’hui s’est
+                            amenuisée. Même si le Doberman est un très bon chien de garde en raison de son instinct de
+                            protection très
+                            marqué et de son fort caractère, il est très doux, en particulier avec les enfants. Le
+                            Doberman est très
+                            intelligent, énergique et d’une fidélité sans faille à sa famille d’adoption. Il déteste la
+                            solitude.
+                            Émotif, le Doberman a besoin d’un maître calme et juste. Athlétique, ce chien convient
+                            parfaitement aux
+                            maîtres sportifs.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="dogoargentino" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Derrière son apparence de chien méchant, le Dogue Argentin est en fait intelligent, courageux
+                            et très dévoué.
+                            C’est un chien qui ne montre aucune agressivité sans bonne raison. Il est même très
+                            équilibré
+                            psychologiquement. Seule une éducation où l’agressivité est mise au premier plan rendra le
+                            Dogue Argentin
+                            dangereux et méchant. Il adore les enfants et est même très patient avec eux. En premier
+                            lieu chien de garde
+                            et de défense, le Dogue Argentin cherchera toujours à protéger sa famille. Facile à vivre,
+                            joyeux, peu
+                            aboyeur, le Dogue Argentin est un animal de compagnie idéal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="dogueallemand" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le dogue allemand a, par son allure, tout du chien de garde, jusqu’à ses aboiements forts et
+                            puissants. C’est
+                            aussi et surtout un excellent animal de compagnie très attaché à son maître et à sa famille
+                            à qui il ne
+                            demande qu’à faire plaisir. S’il reçoit une bonne éducation, le dogue allemand est le plus
+                            doux des chiens.
+                            Il est tout particulièrement sensible aux jeunes enfants dont il apprécie la compagnie et
+                            pour qui il est un
+                            protecteur sans faille. D’autre part, le dogue allemand accepte tout à fait bien la présence
+                            d’autres
+                            chiens, et même celle de chats. Par contre, il déteste la solitude.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="kangal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Kangal, est avant tout un chien de garde de troupeaux ce qui détermine certains de ses
+                            traits de caractère
+                            ou de ses comportements. Logiquement, le Kangal est très méfiant vis-à-vis des personnes
+                            qu’il ne connaît
+                            pas, voire même agressif, car son instinct de protection est très développé. Avec son
+                            maître, c’est un chien
+                            qui fait preuve d’une grande loyauté. Intelligent, il est aussi très affectueux et calme.
+                            S’il aime la vie
+                            en famille, le Kanga, ou Berger d'Anatolie, est également attaché à son indépendance. Ce
+                            chien convient
+                            d’une part aux personnes disponibles tous les jours pour ses activités physiques, et,
+                            d’autre part, aux
+                            maîtres avec un peu de poigne et de fermeté.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="pitbull" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Contrairement à l’image qu’il véhicule, le Pitbull est un chien attentionné, intelligent et
+                            obéissant.
+                            L’agressivité dont il peut faire preuve, comme d’autres chiens, est liée à la manière dont
+                            il a été éduqué
+                            et non pas à son caractère. D’ailleurs, le Pitbull est très affectueux et aime qu’on le
+                            câline. Il a aussi
+                            besoin de beaucoup d’exercices physiques d’où son comportement actif et son attrait pour les
+                            jeux avec les
+                            enfants. Compte tenu de sa corpulence, attention toutefois que le Pitbull ne blesse pas les
+                            tout petits
+                            pendant ces jeux. Des maîtres sportifs, qu’il pourra accompagner lors de leurs sorties
+                            extérieures,
+                            conviennent parfaitement bien au Pitbull.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="rottweiler" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Rottweiler est avant tout un chien de garde, rôle dans lequel il excelle. Doté d’un grand
+                            courage, il fera
+                            tout pour protéger au mieux son maître et ses biens. Son caractère dominant, qui fait
+                            notamment qu’il
+                            supporte mal la présence d’autres chiens, demande à ce que le Rottweiler soit éduqué dès le
+                            plus jeune âge
+                            et que son maître soit sérieux, énergique et fiable. Mais le Rottweiler a aussi besoin
+                            d’énormément de
+                            douceur et d’affection, sans quoi son agressivité sera stimulée. C’est un chien qui adore
+                            les enfants et qui
+                            se sent bien dans une famille qui se rend disponible pour lui.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="saintbernard" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Caractère</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Le Saint-Bernard est réputé pour être un chien doux, intelligent, dévoué et très peu
+                            agressif. C’est un chien
+                            que l’on peut laisser facilement jouer avec les enfants. Fidèle et affectueux, le
+                            Saint-Bernard est
+                            également un très bon animal de compagnie pour les personnes âgées encore actives. Son
+                            caractère de gentil
+                            nounours n’empêche pas qu’il peut se montrer aussi quelque fois têtu et dissuasif en tant
+                            que chien de
+                            garde. Il est tout particulièrement attaché au lieu où il vit et il fera tout pour le
+                            défendre. Le
+                            Saint-Bernard est aussi reconnu pour ses qualités de sauveteur qu’il tient de son instinct,
+                            de son odorat et
+                            de son ouïe très développés. Il ne peut s’empêcher de venir au secours d’une personne qu’il
+                            perçoit en
+                            difficulté.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
 
 </body>
 
